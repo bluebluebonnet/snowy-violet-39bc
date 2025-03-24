@@ -1,8 +1,5 @@
----
-if (idNotFound) { // your condition
-  Astro.response.status = 404;
-  Astro.response.statusText = "Not found";
-}
----
+const Component = Map[data.page?.type];
 
-<div>This content won't display if the ID is not found</div>
+if (!Component) {
+  return Astro.redirect("/404");
+}
