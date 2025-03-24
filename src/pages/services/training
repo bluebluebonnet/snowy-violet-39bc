@@ -1,0 +1,9 @@
+---
+layout: ../layouts/Layout.astro
+title: "Security Awareness Training"
+---
+
+<h1 class="text-3xl font-bold text-blue-800">Compliance & Risk Consulting</h1>
+<p class="mt-4 text-gray-700">
+  Engaging and effective education for your team or organization.
+</p>
