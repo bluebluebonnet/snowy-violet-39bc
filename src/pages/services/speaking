@@ -1,0 +1,9 @@
+---
+layout: ../layouts/Layout.astro
+title: "Workshops & Public Speaking"
+---
+
+<h1 class="text-3xl font-bold text-blue-800">Compliance & Risk Consulting</h1>
+<p class="mt-4 text-gray-700">
+  Customized talks and sessions for conferences, schools, and staff training.<
+</p>
