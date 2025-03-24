@@ -1,99 +1,75 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bluebonnet CyberWorks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background-color: #e3f2fd;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #90caf9;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #1976d2;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background-color: #ffffff;
-      border-bottom: 1px solid #ccc;
-    }
-    nav a {
-      text-decoration: none;
-      color: #1976d2;
-      font-weight: 600;
-    }
-    .hero {
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .cta {
-      margin-top: 2rem;
-    }
-    .cta a {
-      padding: 0.75rem 1.5rem;
-      background-color: #1976d2;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-      background-color: #f1f1f1;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluebonnet Cyberworks</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Bluebonnet CyberWorks</h1>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="/logo01.PNG" alt="Bluebonnet Cyberworks" class="h-12 md:h-16 w-auto">
+      <span class="text-xl font-semibold">Bluebonnet Cyberworks</span>
+    </div>
+    <nav class="space-x-6">
+      <a href="/about" class="hover:text-blue-600">About</a>
+      <a href="/services" class="hover:text-blue-600">Services</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <section class="hero">
-    <h2>Cybersecurity Expertise Rooted in Trust</h2>
-    <p>We specialize in compliance, risk assessments, and training for small businesses, schools, and nonprofits. Let us help you grow safely in today’s digital world.</p>
-    <div class="cta">
-      <a href="#contact">Get in Touch</a>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-blue-50">
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Security that Grows with You</h1>
+    <p class="text-lg md:text-xl text-gray-600 mb-6">Helping organizations blossom through smart, scalable cybersecurity solutions.</p>
+    <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">Let’s Work Together</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+    <p class="text-gray-700 text-lg">Bluebonnet CyberWorks is a consulting firm rooted in trust, clarity, and practical results. We specialize in making cybersecurity manageable for small to mid-sized organizations, schools, and local government entities.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+      <div class="grid gap-10 md:grid-cols-2">
+        <div>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Compliance & Risk Consulting</h3>
+          <p class="text-gray-700">Guided support for frameworks like NIST 800-53, regulations like FERPA, or general security awareness.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Security Awareness Training</h3>
+          <p class="text-gray-700">Engaging and effective education for your team or organization.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Retainer Services</h3>
+          <p class="text-gray-700">On-call cybersecurity support tailored to your needs and budget.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Workshops & Public Speaking</h3>
+          <p class="text-gray-700">Customized talks and sessions for conferences, schools, and staff training.</p>
+        </div>
+      </div>
     </div>
   </section>
-  <footer>
-    &copy; 2025 Bluebonnet CyberWorks. All rights reserved.
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+    <p class="text-gray-700 mb-6">Ready to start a project, request a quote, or ask a question? We’d love to hear from you.</p>
+    <a href="mailto:compliance@bluebonnetcyberworks.com" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6 mt-10">
+    <p class="text-sm">&copy; 2025 Bluebonnet Cyberworks. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
