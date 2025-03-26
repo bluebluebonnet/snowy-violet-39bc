@@ -1,40 +1,42 @@
-import Layout from '../layouts/BlogPost.astro';
-
 ---
-  {
-    title: "Gap Assessment Report",
-    description: "Comprehensive evaluation of current compliance posture against industry standards.",
-  },
-  {
-    title: "Compliance Roadmap",
-    description: "A tailored plan detailing milestones and timelines for achieving full compliance.",
-  },
-  {
-    title: "Risk Register & Risk Treatment Plan",
-    description: "Catalog of risks with prioritization and mitigation strategies.",
-  },
-  {
-    title: "Custom Policy & SOP Pack",
-    description: "Branded, editable policies and procedures aligned to regulatory requirements.",
-  },
-  {
-    title: "Remediation Playbook",
-    description: "Action plan for addressing gaps, vulnerabilities, and findings.",
-  },
-  {
-    title: "Quarterly Executive Report",
-    description: "Summary of key findings, progress, and next steps presented to leadership.",
-  },
-];
+layout: ../layouts/BaseLayout.astro
 ---
 
-<section class="py-10 px-4 md:px-8 max-w-5xl mx-auto">
-  <h2 class="text-3xl font-bold mb-6 text-blue-900">Project-Based Consulting</h2>
+<section class="py-12 px-4 md:px-10 max-w-6xl mx-auto">
+  <h1 class="text-4xl font-bold text-blue-900 mb-8">Project-Based Consulting</h1>
+  <p class="text-lg text-gray-700 mb-10">
+    Explore our core consulting deliverables designed to help your organization meet regulatory compliance and strengthen cybersecurity posture.
+  </p>
+
   <div class="grid gap-6 md:grid-cols-2">
-      <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-6 transition hover:shadow-lg">
-        <h3 class="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
-        <p class="text-gray-700">{item.description}</p>
-      </div>
-    ))}
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Gap Assessment Report</h2>
+      <p class="text-gray-700">Comprehensive evaluation of current compliance posture against industry standards.</p>
+    </div>
+    
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Compliance Roadmap</h2>
+      <p class="text-gray-700">A tailored plan detailing milestones and timelines for achieving full compliance.</p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Risk Register & Risk Treatment Plan</h2>
+      <p class="text-gray-700">Catalog of risks with prioritization and mitigation strategies.</p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Custom Policy & SOP Pack</h2>
+      <p class="text-gray-700">Branded, editable policies and procedures aligned to regulatory requirements.</p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Remediation Playbook</h2>
+      <p class="text-gray-700">Action plan for addressing gaps, vulnerabilities, and findings.</p>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">Quarterly Executive Report</h2>
+      <p class="text-gray-700">Summary of key findings, progress, and next steps presented to leadership.</p>
+    </div>
   </div>
 </section>
