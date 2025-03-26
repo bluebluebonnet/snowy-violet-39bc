@@ -1,1 +1,40 @@
-Compliance
+---
+const deliverables = [
+  {
+    title: "Gap Assessment Report",
+    description: "Comprehensive evaluation of current compliance posture against industry standards.",
+  },
+  {
+    title: "Compliance Roadmap",
+    description: "A tailored plan detailing milestones and timelines for achieving full compliance.",
+  },
+  {
+    title: "Risk Register & Risk Treatment Plan",
+    description: "Catalog of risks with prioritization and mitigation strategies.",
+  },
+  {
+    title: "Custom Policy & SOP Pack",
+    description: "Branded, editable policies and procedures aligned to regulatory requirements.",
+  },
+  {
+    title: "Remediation Playbook",
+    description: "Action plan for addressing gaps, vulnerabilities, and findings.",
+  },
+  {
+    title: "Quarterly Executive Report",
+    description: "Summary of key findings, progress, and next steps presented to leadership.",
+  },
+];
+---
+
+<section class="py-10 px-4 md:px-8 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-blue-900">Project-Based Consulting</h2>
+  <div class="grid gap-6 md:grid-cols-2">
+    {deliverables.map((item) => (
+      <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-6 transition hover:shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
+        <p class="text-gray-700">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
