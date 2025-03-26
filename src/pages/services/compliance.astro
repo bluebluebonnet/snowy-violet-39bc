@@ -31,7 +31,6 @@ import Layout from '../layouts/BlogPost.astro';
 <section class="py-10 px-4 md:px-8 max-w-5xl mx-auto">
   <h2 class="text-3xl font-bold mb-6 text-blue-900">Project-Based Consulting</h2>
   <div class="grid gap-6 md:grid-cols-2">
-    {deliverables.map((item) => (
       <div class="bg-white border border-gray-200 shadow-md rounded-2xl p-6 transition hover:shadow-lg">
         <h3 class="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
         <p class="text-gray-700">{item.description}</p>
