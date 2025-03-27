@@ -1,61 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bluebonnet Cyberworks</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-white text-gray-800 font-sans">
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
 
-  <!-- Header -->
-  <header class="flex items-center justify-between px-6 py-4 shadow-md">
-    <div class="flex items-center space-x-3">
-      <img src="/logo01.PNG" alt="Bluebonnet Cyberworks" class="h-12 md:h-16 w-auto">
-      <a href=/ class="however:font-semibold-text-blue-600">Bluebonnet CyberWorks</a>    
+<BaseLayout title="Compliance Services | Bluebonnet CyberWorks">
+  <section class="text-center max-w-3xl mx-auto mb-12">
+    <h1 class="text-4xl font-bold text-blue-900 mb-4">Compliance Services</h1>
+    <p class="text-lg text-gray-700">
+      We help organizations simplify cybersecurity compliance, meet industry standards, and stay audit-ready.
+      Whether you're navigating frameworks like PCI-DSS, HIPAA, or NIST 800-171—we’ll guide you through it.
+    </p>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+    <div class="border border-gray-200 rounded-xl p-6 shadow-sm bg-white">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">PCI-DSS</h2>
+      <p class="text-gray-700">Ensure your payment systems meet all 12 requirements with expert-led gap assessments and implementation support.</p>
     </div>
-    <nav class="space-x-6">
-      <a href=/services/pricing class="however:text-blue-600">Pricing</a>
-    </nav>
-  </header>
 
-  <!-- Hero -->
-  <section class="text-center py-20 bg-blue-50">
-    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Project-Based Consulting</h1>
-    <p class="text-lg md:text-xl text-gray-600 mb-6">Explore our core consulting deliverables designed to help your organization meet regulatory compliance and strengthen cybersecurity posture.
-</p></p>
+    <div class="border border-gray-200 rounded-xl p-6 shadow-sm bg-white">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">NIST 800-171</h2>
+      <p class="text-gray-700">We guide defense contractors and research institutions through control implementation, SSPs, and POA&Ms.</p>
+    </div>
 
-      <!--Compliance Roadmap -->
-      <section id="Gap Assessment Report" class"=py-16 px-5 max-w-4x1 mx-auto text-center">
-            <h2 class="text-3x1 font-auto mb-4">Comprehensive evaluation of current compliance posture against industry standards.</h2>
-</section>
-     
+    <div class="border border-gray-200 rounded-xl p-6 shadow-sm bg-white">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">HIPAA</h2>
+      <p class="text-gray-700">Support for healthcare organizations and vendors to protect ePHI and satisfy Security and Privacy Rule requirements.</p>
+    </div>
 
-<p> 
+    <div class="border border-gray-200 rounded-xl p-6 shadow-sm bg-white">
+      <h2 class="text-xl font-semibold text-blue-800 mb-2">CMMC</h2>
+      <p class="text-gray-700">Support for CMMC readiness, scoring, and gap analysis—tailored for small contractors in the DoD supply chain.</p>
+    </div>
+  </section>
 
-Gap Assessment Report – Comprehensive evaluation of current compliance posture against industry standards.
-
-</p>
-
-<p class="text-lg text-blue-700 mb-8">
-Compliance Roadmap – A tailored plan detailing milestones and timelines for achieving full compliance.
-</p>
-<p class="text-lg text-red-1700 mb-8">
-Risk Register & Risk Treatment Plan – Catalog of risks with prioritization and mitigation strategies.
-</p>
-<p class="text-lg text-black-500 mb-8">
-Custom Policy & SOP Pack – Branded, editable policies and procedures aligned to regulatory requirements.
-</p>
-<p class="text-lg text-gray-700 mb-8">
-Remediation Playbook – Action plan for addressing gaps, vulnerabilities, and findings.
-</p>
-<p class="text-lg text-gray-700 mb-8">
-Quarterly Executive Report – Summary of key findings, progress, and next steps presented to leadership.
-  
-
-</p>
-
-  <div class="grid gap-6 md:grid-cols-2">
-
-
-  </div>
+  <section class="text-center mt-16">
+    <a href="/contact" class="inline-block bg-blue-800 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+      Request a Free Consultation
+    </a>
+  </section>
+</BaseLayout>
