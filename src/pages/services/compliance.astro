@@ -1,16 +1,37 @@
----
-import Layout from '/src/layouts/BlogPost.astro';
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluebonnet Cyberworks</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="/logo01.PNG" alt="Bluebonnet Cyberworks" class="h-12 md:h-16 w-auto">
+      <span class="text-xl font-semibold">Bluebonnet Cyberworks</span>
+    </div>
+    <nav class="space-x-6">
+      <a href=/services/pricing class="however:text-blue-600">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-blue-50">
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Project-Based Consulting</h1>
+    <p class="text-lg md:text-xl text-gray-600 mb-6">Explore our core consulting deliverables designed to help your organization meet regulatory compliance and strengthen cybersecurity posture.
+</p></p>
+
+      <!--Compliance Roadmap -->
+      <section id="Gap Assessment Report" class"=py-16 px-5 max-w-4x1 mx-auto text-center">
+            <h2 class="text-3x1 font-auto mb-4">Comprehensive evaluation of current compliance posture against industry standards.</h2>
+</section>
 
 <Layout 
       
-      title="Project-Based Consulting">
-  <h1 class="text-4xl font-bold text-blue-900 mb-6">Project-Based Consulting</h1>
->
-<p class="text-lg text-gray-700 mb-8">
-
-    Explore our core consulting deliverables designed to help your organization meet regulatory compliance and strengthen cybersecurity posture.
-</p>
 
 <p> 
 
