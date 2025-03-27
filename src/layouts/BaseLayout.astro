@@ -7,7 +7,6 @@ const { description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
-<html lang="en">
 	<head>
 		<style>
 			main {
@@ -51,10 +50,15 @@ const { description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 
-  <body class="bg-white text-gray-900 antialiased">
+  <body class="bg-gray text-blue-900 antialiased">
     <Header />
 
-    <main class="px-4 py-12 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <main>
+	<article>
+	<div class="px-4 py-12 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+	</div>
+	</article>
+
       <slot />
     </main>
 
