@@ -1,67 +1,37 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-const { title = "Bluebonnet CyberWorks" } = Astro.props;
-
-const { description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title = "Page Title" } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+<!DOCTYPE html>
+<html lang="en" class="bg-sky-50 text-sky-900">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="min-h-screen flex flex-col font-sans">
 
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-sky-800">YourBrand</h1>
+        <!-- Navigation goes here -->
+      </div>
+    </header>
 
-  <body class="bg-gray text-blue-900 antialiased">
-    <Header />
-
-    <main>
-	<article>
-	<div class="px-4 py-12 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-	</div>
-	</article>
-
-      <slot />
+    <!-- Main Content -->
+    <main class="flex-1">
+      <div class="max-w-5xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
+        <slot />
+      </div>
     </main>
 
-    <Footer />
+    <!-- Footer -->
+    <footer class="bg-white border-t border-sky-100 mt-12">
+      <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 text-sm text-sky-600 text-center">
+        &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
+      </div>
+    </footer>
+
   </body>
 </html>
